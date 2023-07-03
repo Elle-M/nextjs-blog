@@ -5,15 +5,16 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Elle Majors';
-export const siteTitle = 'Elle Majors';
+export const siteTitle = 'Elle Majors | Software Engineer';
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Elle Majors' personal website"
+          content="Learn how to build a personal website using Next.js"
         />
         <meta
           property="og:image"
@@ -33,7 +34,7 @@ export default function Layout({ children, home }) {
               className={utilStyles.borderCircle}
               height={144}
               width={144}
-              alt="Elle Majors' picture"
+              alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
