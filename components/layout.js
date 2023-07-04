@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import profilePic from '../public/images/profile.jpg';
 
 const name = 'Elle Majors';
 export const siteTitle = 'Elle Majors';
@@ -11,7 +12,6 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Elle Majors' personal website"
@@ -22,11 +22,11 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/elle.pic.jpg"
+              src= {profilePic}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
-              alt=""
+              alt="Elle Majors' profile picture"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -35,11 +35,11 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/elle.pic.jpg"
+                src= {profilePic}
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
-                alt=""
+                alt="Elle Majors' profile picture"
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
