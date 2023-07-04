@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
       <h2>Software Engineer (she/her) </h2>
         <p>Hi, I'm <strong>Elle Majors.</strong></p>
-        <p>I am a software engineer with a passion for creating solutions that make a difference. I am currently seeking a full-time role where I can leverage my skills to build products that improve people’s lives. You can contact me on <a href="https://www.linkedin.com/in/ellemajors/">LinkedIn.</a></p>
+        <p>I am a software engineer with a passion for creating solutions that make a difference. I am currently seeking a full-time role where I can leverage my skills to build products that improve people’s lives. You can contact me on <a href="https://www.linkedin.com/in/ellemajors/">LinkedIn</a> or find me on <a href="https://github.com/Elle-M">GitHub</a>.</p>
       </section>
       <section>
       <h1 className="title">
