@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout, { siteHeader, siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
@@ -21,13 +21,17 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-      <p>Software Engineer | Web Developer</p>
-        <p>As a software developer with a unique background, I bring a diverse set of skills to the table. With a foundation in art and creative education, I am able to visualize end products and reverse engineer solutions. My experience as a serial entrepreneur has honed my ability to think outside the box, and my public-speaking background has developed my communication skills to clearly convey complex ideas to diverse audiences.</p>
-        <p>My journey to software development began with a successful career as a founder, which included two exits and industry experience in various roles. I then went on to develop a software-based business model, COSALON. To further my expertise, I enrolled in the Turing School of Software and Design for Back-End Development, where I gained hands-on experience in programming.</p>
-        <p>Beyond work, I prioritize spending time with my family and volunteering, as well as advocating for under served communities. I also enjoy reading and spending time in nature.</p>
+      <h2>Software Engineer (she/her) </h2>
+        <p>Hi, I'm <strong>Elle Majors.</strong></p>
+        <p>I am a software engineer with a passion for creating solutions that make a difference. I am currently seeking a full-time role where I can leverage my skills to build products that improve people’s lives. You can contact me on <a href="https://www.linkedin.com/in/ellemajors/">LinkedIn.</a></p>
+      </section>
+      <section>
+      <h1 className="title">
+        Read <Link href="/posts/about-me">about my story.</Link>
+      </h1>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Blog Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
