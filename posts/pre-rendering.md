@@ -3,7 +3,7 @@ title: 'Next.js Pre-rendering: Static Generation vs. Server-Side Rendering'
 date: '2023-07-01'
 ---
 
-Next.js, a popular web development framework, offers two pre-rendering options: **Static Generation and Server-Side Rendering (SSR)**. Each method differs in when HTML is generated for a page. Next.js allows you to choose the pre-rendering approach on a per-page basis, enabling the creation of hybrid apps that combine Static Generation and SSR.
+Next.js, a popular web development framework, offers two pre-rendering options: **Static Generation** and **Server-Side Rendering (SSR)**. Each method differs in when HTML is generated for a page. Next.js allows you to choose the pre-rendering approach on a per-page basis, enabling the creation of hybrid apps that combine Static Generation and SSR.
 
 **Static Generation (SG):**
 - HTML is generated at build time and reused for each request.
