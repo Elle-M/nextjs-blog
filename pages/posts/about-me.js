@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import { title } from '../../components/layout';
-import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
 
 export default function AboutMe() {
